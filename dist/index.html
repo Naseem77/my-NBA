@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="vewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <input id="inputName" type="text">
+        <button id="btn">Get Roster</button>
+    </div>
+    <div class="dataDiv"></div>
+
+    <script id="players-template" type="text/x-handlebars-template">
+        {{#each players}}
+            <div class="playerDiv">
+                <div>{{firstName}}</div>
+                <div>{{jersey}}</div>
+                <div class="recipe-div">
+                    <img  id="{{idMeal}}" class="photoHolder" src="{{img}}" alt="No Photo Found">
+                </div>
+                <div>{{pos}}</div>
+            </div>
+        {{/each}}       
+    </script>
+</body>
+<script src="/jquery/dist/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+<script src="main.js"></script>
+</html>
