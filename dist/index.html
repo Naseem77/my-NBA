@@ -8,20 +8,21 @@
 </head>
 <body>
     <div class="container">
-        <input id="inputName" type="text">
+        <input id="inputName" type="text" value="heat">
         <button id="btn">Get Roster</button>
+        <button id="btn2">Dream Team</button>
     </div>
     <div class="dataDiv"></div>
 
     <script id="players-template" type="text/x-handlebars-template">
         {{#each players}}
-            <div class="playerDiv">
-                <div>{{firstName}}</div>
-                <div>{{jersey}}</div>
-                <div class="recipe-div">
-                    <img  id="{{idMeal}}" class="photoHolder" src="{{img}}" alt="No Photo Found">
+            <div class="player-container">
+                <div id="first">{{firstName}}</div>
+                <div id="jer">{{jersey}}</div>
+                <div class="player-div">
+                    <img class="image" src="{{img}}" alt="No Photo Found">
                 </div>
-                <div>{{pos}}</div>
+                <div id="pos">{{pos}}</div>
             </div>
         {{/each}}       
     </script>

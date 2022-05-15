@@ -1,24 +1,25 @@
 body {
-  background-color: #f8f8ff;
+  background-color: #f7f9ff;
 }
 
 .container {
-  background-color: #f8f8ff;
+  background-color: #f7f9ff;
   margin: 30px;
   padding-top: 2px;
 }
 
 #inputName {
-  width: 85%;
+  width: 55%;
+  height: 20px;
 }
 
-#btn {
-  margin-left: 30px;
+#btn #btn2 {
+  margin-left: 10px;
   width: 10%;
 }
 
 .dataDiv {
-  background-color: #f8f8ff;
+  background-color: #f7f9ff;
   text-align: center;
   display: grid;
   grid-gap: 10px;
@@ -26,16 +27,16 @@ body {
   margin: 30px;
   padding: 10px;
 }
-.playerDiv {
+.player-container {
   display: grid;
   background-color: rgb(170, 112, 4);
   text-align: center;
-  border-radius: 4px;
+  border-radius: 1px;
 }
 
-.photoHolder {
-  background-color: #f8f8ff;
-  height: 300px;
-  width: 300px;
-  border-radius: 50%;
+.image {
+  background-color: #f7f9ff;
+  height: 200px;
+  width: 200px;
+  border-radius: 20%;
 }
